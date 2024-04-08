@@ -1,0 +1,75 @@
+syntax: glob
+# generic
+*.pyc
+*~
+.DS_Store
+ckanext_opengov.egg-info/*
+sandbox/*
+pip-log.txt
+cmd.txt
+
+# pylons
+data/*
+
+# other
+build/*
+tmp/*
+package/DEBIAN/control
+*.swp
+.coverage
+dist/*
+.tox/*
+.idea/*
+reports/*
+storage/*
+
+syntax: glob
+# generic
+*.pyc
+*.swp
+*.swo
+.DS_Store
+ckan.egg-info/*
+sandbox/*
+dist
+.mypy_cache
+
+# pylons
+development.ini*
+sstore/*
+data/*
+pylons_data/*
+#ckan/i18n/*/*/*.mo
+
+# other
+pip-requirements-local.txt
+migrate/*
+build/*
+tmp/*
+solr_runtime/*
+fl_notes.txt
+*.ini
+!ckan/migration/alembic.ini
+.noseids
+*~
+.idea
+.vscode
+
+# custom style
+ckan/public/base/less/custom.less
+
+# nosetest coverage output
+.coverage
+htmlcov/*
+
+# CKAN
+ckan.log
+ckan_deb/DEBIAN/control
+ckan_deb/DEBIAN/prerm
+
+# node.js
+node_modules/
+
+# docker
+contrib/docker/.env
+cypress.env.json
